@@ -1,0 +1,5 @@
+#directory "_build";;
+#use "topfind";;
+#require "qcheck";;
+#load "fun.cma";;
+open QCheck;;
