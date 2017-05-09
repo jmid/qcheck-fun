@@ -91,14 +91,6 @@ let prop_winning name n strat =
 
 (* Another example from Norell: prop_losing *)
 
-(* Observations:
-     - shrinking does not work as well over functions
-         (counterexamples are even greater with int generator)
-     - the printed functions are partial 
-         (Claessen in Haskell and Norell's eqc_fun in Erlang prints them with a final _ catch all case) 
-     - can one express Norell's prop_losing as a recursive invocation of QCheck_runner.run_tests?
-*)
-
 ;;
 QCheck_runner.run_tests ~verbose:true
   [prop_false_bool;
